@@ -92,6 +92,7 @@ public class admin extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         if (e.getSource()==add_Employee){
+            new AddEmployee();
 
         } else if (e.getSource()==add_Room){
             new AddRoom();
