@@ -59,7 +59,12 @@ public class Dashboard extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource()==rec){
 
+            new Reception();
+            setVisible(false);
+
         } else {
+            new  login2();
+            setVisible(false);
 
         }
 

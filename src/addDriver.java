@@ -139,7 +139,7 @@ public class addDriver extends JFrame  implements ActionListener {
         label1.setBounds(500,60,300,300);
         panel.add(label1);
 
-
+         setUndecorated(true);
         setLocation(20,200);
         setLayout(null);
         setSize(900,500);
