@@ -196,7 +196,7 @@ public class AddEmployee  extends JFrame implements ActionListener {
                try{
 
                    con c = new con();
-                   String q = "insert into employee values ('"+name+"','"+age+"','"+gender+"','"+job+"','"+salary+"','"+phone+"','"+email+"','"+aadhar+"')";
+                   String q = "insert into employee values ('"+age+"','"+name+"','"+gender+"','"+job+"','"+salary+"','"+phone+"','"+email+"','"+aadhar+"')";
                    c.statement.executeUpdate(q);
                    JOptionPane.showMessageDialog(null,"Employee Added");
                    setVisible(false);
