@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 
 public class Employee extends JFrame {
     Employee(){
+
         JPanel panel = new JPanel();
         panel.setBounds(5,5,990,590);
         panel.setBackground(new Color(3,45,48));
