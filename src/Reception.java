@@ -112,6 +112,8 @@ public class Reception extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try{
 
+                    new Customerinfo();
+
 
 
                 }catch (Exception E){
@@ -224,13 +226,6 @@ public class Reception extends JFrame {
                 }
             }
         });
-
-
-
-
-
-
-
 
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
