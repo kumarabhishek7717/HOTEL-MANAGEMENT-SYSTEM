@@ -41,6 +41,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
+                    new NewCustomer();
 
                 }catch (Exception E){
                     E.printStackTrace();
@@ -144,10 +145,11 @@ public class Reception extends JFrame {
         btnCO.setBackground(Color.BLACK);
         btnCO.setForeground(Color.WHITE);
         panel1.add(btnCO);
-        btnMI.addActionListener(new ActionListener() {
+        btnCO.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
+                    new CheckOut();
 
                 }catch (Exception E){
                     E.printStackTrace();
@@ -166,6 +168,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
+                    new UpdateCheck();
 
                 }catch (Exception E){
                     E.printStackTrace();
@@ -184,6 +187,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
+                    new UpdateRoom();
 
                 }catch (Exception E){
                     E.printStackTrace();
@@ -201,6 +205,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
+                    new Pickup();
 
                 }catch (Exception E){
                     E.printStackTrace();
@@ -226,6 +231,40 @@ public class Reception extends JFrame {
                 }
             }
         });
+
+        JButton lagout = new JButton("Lagout");
+        lagout.setBounds(30,470,95,30);
+        lagout.setBackground(Color.BLACK);
+        lagout.setForeground(Color.WHITE);
+        panel1.add(lagout);
+        lagout.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try{
+                   System.exit(500);
+                }catch (Exception E){
+                    E.printStackTrace();
+                }
+            }
+        });
+
+        JButton back = new JButton("Back");
+        back.setBounds(140,470,95,30);
+        back.setBackground(Color.BLACK);
+        back.setForeground(Color.WHITE);
+        panel1.add(back);
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try{
+                   setVisible(false);
+                   new Dashboard();
+                }catch (Exception E){
+                    E.printStackTrace();
+                }
+            }
+        });
+
 
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
